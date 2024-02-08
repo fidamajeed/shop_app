@@ -16,9 +16,9 @@ router.get("/view",async(req,res)=>{
    res.json(data)
 })
 
-//router.post("/srch",async(req,res)=>{
-  //  let input=req.body
-    //let data=await MovieRouter.find(input)
-    //res.json(data)
-//})
+router.post("/srch",async(req,res)=>{
+   let input=req.body
+    let data=await MovieRouter.find(input)
+    res.json(data)
+})
 module.exports=router
