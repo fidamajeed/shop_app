@@ -11,10 +11,10 @@ router.post("/add",async(req,res)=>{
         }
     )
 })
-//router.get("/view",async(req,res)=>{
-    //let data=await MovieRouter.find()
-    //res.json(data)
-//})
+router.get("/view",async(req,res)=>{
+   let data=await MovieRouter.find()
+   res.json(data)
+})
 
 //router.post("/srch",async(req,res)=>{
   //  let input=req.body
